@@ -3,6 +3,9 @@ Ash::Application.routes.draw do
   root :to => 'home#index'
   get "home/index"
   get "home/about"
+  get "home/contact"
+  get "home/projects"
+  get "home/publications"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
