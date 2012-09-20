@@ -23,7 +23,12 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'simple_form'
+gem "ckeditor", "3.7.1"
+gem "carrierwave"
+gem "mini_magick"
+gem "truncate_html", "~> 0.5.5"
+gem "rspec-rails", "~> 2.11.0"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

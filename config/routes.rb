@@ -1,5 +1,9 @@
 Ash::Application.routes.draw do
   
+  mount Ckeditor::Engine => '/ckeditor'
+
+  resources :blogs
+
   root :to => 'home#index'
   get "home/index"
   get "home/about"

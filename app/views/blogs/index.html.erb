@@ -1,0 +1,8 @@
+<h1>Listing blogs</h1>
+
+<% @blogs.each do |blog| %>
+    <h2><%= blog.title %> <span class='smaller dim pull-right'> <%= blog.created_at.strftime('%B %d, %Y') %> </span></h2>
+    <p><%= truncate_html(blog.content, :length => 480) %></p>
+    <%= link_to 'Read more', blog %>
+    <hr />
+<% end %>
